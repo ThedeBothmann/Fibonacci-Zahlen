@@ -3,7 +3,7 @@ import java.io.*;
 
 
 public class fibonacci_folge {
-    public static void main(String[] args) {
+    public static void ausfuerung(int t) {
         Writer fz = null;
         int[] fibonaccioffical = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55};
         boolean weiter = true;
@@ -21,7 +21,6 @@ public class fibonacci_folge {
                 fz = new FileWriter("Fibonacci-Zahlen_Liste.txt");
                 fz.write(s);
                 fz.append(System.getProperty("line.separator"));
-                System.out.println(c);
                 while (weiter) {
                     if (i < 10) {
                         c = a + b;
@@ -33,7 +32,6 @@ public class fibonacci_folge {
                             z++;
                             fz.write(s);
                             fz.append(System.getProperty("line.separator"));
-                            System.out.println(c);
                             weiter = true;
                         } else {
                             System.out.println("Dieser Code ist falsch!");
@@ -43,7 +41,7 @@ public class fibonacci_folge {
                     } else {
                         System.out.println("Dieser Code scheint korrekt zu sein!");
                         int j;
-                        for (j = 10; j < 92; j++) {
+                        for (j = 10; j < t; j++) {
                             c = a + b;
                             a = b;
                             b = c;
@@ -51,7 +49,6 @@ public class fibonacci_folge {
                             z++;
                             fz.write(s);
                             fz.append(System.getProperty("line.separator"));
-                            System.out.println(c);
                         }
                         weiter = false;
                     }
@@ -68,6 +65,8 @@ public class fibonacci_folge {
                         e.printStackTrace();
                     }
             }
+            System.out.println("Die " + t + ". Fibonacci_Zahl ist " + c);
+            System.out.println("Alle vorherigen Fibonacci-Zahlen findest du im Dokument Fibonacci-Zahlen_Liste.txt");
         }
         else {
             System.err.println("Die Eingabewerte sind falsch");
