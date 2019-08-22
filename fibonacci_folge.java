@@ -18,7 +18,7 @@ public class fibonacci_folge {
             try {
                 s = ("Die " + z + ". Fibonacci-Zahl ist "+ c);
                 z++;
-                fz = new FileWriter("Fibonacci-Zahlen_Liste.txt");
+                fz = new FileWriter("bin/Fibonacci-Zahlen_Liste.txt");
                 fz.write(s);
                 fz.append(System.getProperty("line.separator"));
                 while (weiter) {

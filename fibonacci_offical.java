@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.*;
 
 public class fibonacci_offical {
     public static void main (String [] args){
@@ -10,8 +9,7 @@ public class fibonacci_offical {
         System.out.println("Willst du die Zahlen noch zusätzlich in der Konsole ausgegeben haben? (True=Ja, False=Nein)");
         boolean mehr =s.nextBoolean();
         if(mehr){
-            System.out.println("Diese Funktion ist noch in Bearbeitung");
-            
+        Reader.Lesen();
         }
     }
 }
