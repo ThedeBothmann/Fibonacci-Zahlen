@@ -39,7 +39,6 @@ public class fibonacci_folge {
                         }
                         i++;
                     } else {
-                        System.out.println("Dieser Code scheint korrekt zu sein!");
                         int j;
                         for (j = 10; j < t; j++) {
                             c = a + b;
@@ -66,7 +65,6 @@ public class fibonacci_folge {
                     }
             }
             System.out.println("Die " + t + ". Fibonacci_Zahl ist " + c);
-            System.out.println("Alle vorherigen Fibonacci-Zahlen findest du im Dokument Fibonacci-Zahlen_Liste.txt");
         }
         else {
             System.err.println("Die Eingabewerte sind falsch");
